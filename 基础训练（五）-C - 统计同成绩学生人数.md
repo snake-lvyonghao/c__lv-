@@ -1,4 +1,4 @@
-# C - 统计同成绩学生人数 
+··# C - 统计同成绩学生人数 
 读入N名学生的成绩，将获得某一给定分数的学生人数输出。 
 ## Input
 测试输入包含若干测试用例，每个测试用例的格式为 
@@ -29,3 +29,26 @@
 ## Huge input, scanf is recommended.
 Hint
 Hint
+```
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	int a[1000],n,s,total,i;
+	while(scanf("%d",&n)&& n != 0){
+		for(i = 0; i < n ; i++)
+		{
+			scanf("%d",&a[i]);
+		}
+		scanf("%d",&s); 
+		total = 0;
+		for(i = 0;i < n; i ++){
+			if(a[i] == s){
+				total++;
+			
+		}
+	}
+		printf("%d\n",total);
+}
+	return 0;
+}
+```
